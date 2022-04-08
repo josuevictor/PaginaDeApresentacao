@@ -62,7 +62,6 @@ div .titulo-intro{
 .container-intro{
     display: grid;
     grid-template-columns: 1fr;
-
     margin-bottom: 3rem;
 
 }
@@ -77,12 +76,12 @@ div .titulo-intro{
 div.titulo-experiencia{
     text-align: center;
     font-weight: 900;
-    font-size: 3em;
+    font-size: 2em;
     opacity: .2;
 }
 
 .texto-experiencia{
-    width: 400px;
+    width: 350px;
 }
 
 .container-experiencia{
@@ -99,8 +98,12 @@ div.experiencias{
 
 .card-experiencia{
     background: #CCCCCC;
-    width: 400px;
+    width: 350px;
     height: 100px;
     border-radius: 5px;
+}
+
+.card-experiencia .card-1{
+    
 }
 
