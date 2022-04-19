@@ -10,52 +10,122 @@
 </head>
 <body>
     <header>
-        <img src="./assets/marca.svg" alt="">
+        <h1>Josué Victor</h1>
 
-        <ul>
-            <li><a href="#">Experiência</a></li>
-            <li><a href="#">Formação</a></li>
-            <li><a href="#">Contato</a></li>
-        </ul>
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Experiência</a></li>
+                <li><a href="#">Formação</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main class="container">
-        <section class="container-intro">
-            <div class="foto-perfil">
-                <img src="./assets/perfil.jpg" alt="">
-            </div>
+            <img src="./assets/perfil.jpg" class="perfil" alt="">
+
             <div class="texto-intro">
-                <h1 class="titulo-intro">Desenvolvedor Front End & UX/UI Designer</h1>
+                <h1>Desenvolvedor Front End & UX/UI Designer</h1>
                 <p>Localizado em Maceió &#x1F3D6;</p>
             </div>
-        </section>
     </main>    
 
     <section class="container-experiencia">
         <div class="titulo-experiencia">
-            <h1 class="titulo-experiencia">EXPERIÊNCIA</h1>
+            <h1>EXPERIÊNCIA</h1>
         </div>
 
-        <div class="experiencias">
-            <div class="card-experiencia card-1">
-                <h4>Bikcraft</h4>
-                <h4>Desenvolvedor Júnior</h4>
-                <p>
-                   Desenvolvo pequenos projetos como o Bikcraft utilizando apenas HTML, CSS e JavaScript.
-                   Para aplicativos web como a rede social Dogs.
-                </p>
-            </div>
-            <div class="card-experiencia">
+        <div class="container-cards-experiencia">            
 
+            <div class="card-container">
+                <div class="card-experiencia">
+                    <h4>Desenvolvimento web</h4>
+                    <p class="title-languages">ferramentas</p>
+                    <p class="experiencia">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        Fugiat cupiditate ut fuga nihil laudantium possimus commodi 
+                    </p>
+                    <ul>
+                        <li><img src="./assets/html5-brands.svg" alt=""></li>
+                        <li><img src="./assets/css3-alt-brands.svg" alt=""></li>
+                        <li><img src="./assets/js-square-brands.svg" alt=""></li>
+                    </ul>
+                </div>
+    
+                <div class="card-experiencia">
+                    <h4>Estágio</h4>
+                    <p class="title-languages">ferramentas</p>
+                    <p class="experiencia">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        Fugiat cupiditate ut fuga nihil laudantium possimus commodi 
+                    </p>
+                    <ul>
+                        <li><img src="./assets/servidor-sql.png" alt=""></li>
+                        <li><img src="./assets/delphi.png" alt=""></li>
+                    </ul>
+                </div>  
+                
             </div>
-            <div class="card-experiencia">
-
+                
             </div>
         </div>
     </section>
 
-    <section class="formacao">
+    <section class="container-formacao">
+        <div class="titulo-formacao">
+            <h1>FORMAÇÃO</h1>
+        </div>
+
+        <div class="formacoes">
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut totam ea quae debitis dicta maxime. Distinctio provident magnam hic voluptates, commodi, impedit vel ad atque deleniti mollitia nisi, voluptas repudiandae?</p>
+
+            <!-- <div class="cards">
+                <div class="card-formacao">
+                    
+                </div>
+    
+                <div class="card-formacao">
+                    
+                    
+                </div>
+    
+                <div class="card-formacao">
+                    
+                </div>
+            </div> -->
+
+            <div class="cursos">
+                <p>cursos</p>
+                <p>Progrmação para internet com JavaScript<span>/DigitalInovationOne</span></p>
+                <p>Introdução a de websites com HTML5 e CSS3<span>/DigitalInovationOne</span></p>
+                <p>JavaScript ES6 Essencial<span>/DigitalInovationOne</span></p>
+            </div>
+            
+            <div class="idiomas">
+                <p>idiomas</p>
+                <p>Ingês<span>/Básico</span></p>
+                <p>Espanhol<span>/Básico</span></p>
+            </div>
+        </div>
     </section>
+
+    <footer>
+        <div>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Fugiat cupiditate ut fuga nihil laudantium possimus commodi 
+                provident minima, quasi laboriosam, saepe officiis asperiores 
+                voluptate, aperiam necessitatibus. Reprehenderit, dolores? Nisi, doloremque!
+            </p>
+        </div>
+
+        <!-- <ul class="contato">
+            <li><img src="./assets/instagram-brands.svg" alt=""></li>
+            <li><img src="./assets/linkedin-brands.svg" alt=""></li>
+            <li><img src="./assets/github.png" alt=""></li>
+        </ul> -->
+    </footer>
 
 </body>
 </html>

@@ -6,17 +6,21 @@
     box-sizing: border-box;
 }
 
+p{
+    text-align: justify;
+}
+
 ul{
     list-style: none;
 }
 
-ul li{
-    display: block;
+nav ul li{
+    display: inline;
     margin: 0 0 .5rem 2rem;
     padding: .5rem;
 }
 
-ul li a{
+nav ul li a{
     margin-left: 20px;
     padding: .5rem;
 }
@@ -25,6 +29,10 @@ a{
     text-decoration: none;
     color: #000;
     font-family: Arial;
+}
+
+h4{
+    font-size: .8rem;
 }
 
 body{
@@ -39,71 +47,179 @@ header{
     align-items: center;
 
     padding: 3rem 5rem;
+    margin-bottom: 5rem;
 }
 
-img{
-    width: 200px;
+.perfil{
+    width: 400px;
+    border-radius: 50%;
 }
 
 
 /*INTRO*/
-
-.texto-intro{
-    margin: auto;
-}
-
-div .titulo-intro{
-    margin: auto;
-    font-size: 3rem;
-    display: block;
-    width: 350px;
-}
-
-.container-intro{
-    display: grid;
-    grid-template-columns: 1fr;
-    margin-bottom: 3rem;
-
-}
-
-.container .foto-perfil{
+.container{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    margin-bottom: 10rem;
+
+
 }
+
+
+/*INTRO TXTs*/
+div.texto-intro{
+    font-size: 2rem;
+    margin-top: 4rem;
+    width: 500px;
+}
+
+.texto-intro p{
+    opacity: .7;
+}
+
 
 /*EXPERIÊNCIA*/
 
-div.titulo-experiencia{
-    text-align: center;
-    font-weight: 900;
-    font-size: 2em;
-    opacity: .2;
-}
-
-.texto-experiencia{
-    width: 350px;
-}
-
 .container-experiencia{
-    display: grid;
-    justify-content: center;
+    display: flex;
+    padding: 2rem 10rem;
 }
 
-div.experiencias{
+
+.container-cards-experiencia{
     display: grid;
-    grid-template-rows: repeat(4,1fr);
-    justify-content: center;
-    gap: 2rem;
+    grid-template-columns: 1fr ;
 }
 
 .card-experiencia{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-evenly;
+    gap: 2rem;
     background: #CCCCCC;
-    width: 350px;
-    height: 100px;
     border-radius: 5px;
+    padding: 1rem;
+
+
 }
 
-.card-experiencia .card-1{
-    
+.card-container{
+    display: grid;
+    gap: 2rem;
+}
+
+.card-container li{
+    display: inline-block;
+    margin-right: 2rem;
+    line-height: 1.9;
+}
+
+.card-experiencia ul{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.card-container img{
+    height: 30px;
+    width: 30px;
+}
+
+
+
+
+/*EXPERIÊNCIA TXTs*/
+div.titulo-experiencia{
+    display: block;
+    width: 350px;
+    word-wrap: break-word;
+    font-weight: 900;
+    font-size: 6em;
+    opacity: .3;
+
+}
+
+.card-experiencia .title-languages{
+    text-align: right;
+}
+
+
+/*FORMACAO*/
+section.container-formacao{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 4rem;
+    margin-top: 10px;
+    background: #141414;
+}
+
+.formacoes{
+    display: grid;
+    grid-template-rows: 120px 200px 80px 80px;
+    align-items: center;
+}
+
+.formacoes .cards{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.card-formacao{
+    width: 260px;
+    height: 140px;
+    background: #000000;
+    margin-right: 10px;
+    border-radius: 5px;
+    text-align: center;
+
+}
+
+/*FORMACAO TXTs*/
+
+.titulo-formacao{
+    width: 300px;
+    word-wrap: break-word;
+}
+
+.titulo-formacao h1{
+    text-align: left;
+    font-weight: 900;
+    font-size: 7em;
+    color: #000;
+}
+
+.formacoes > p{
+    width: 400px;
+    color: #fff;
+}
+
+.formacoes  p{
+    color: #fff;
+}
+
+span{
+    opacity: .5;
+}
+
+
+/*FOOTER*/
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5rem;
+    background: #5f5f5f;
+}
+
+
+footer p{
+    color: #fff;
+    width: 400px;
+}
+
+.contato li{
+    display: block;
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: #fff;
 }
 
